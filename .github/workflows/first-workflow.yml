@@ -1,9 +1,10 @@
 name: First Workflow
 on: workflow_dispatch
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: First steps
-      run: echo "Bismillah Hirrahman Nirrahim"
-    - name: Second steps
-      run: echo "Alhamdulillah"
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First steps
+        run: echo "Bismillah Hirrahman Nirrahim"
+      - name: Second steps
+        run: echo "Alhamdulillah"
